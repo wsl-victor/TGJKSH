@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodClassCollectionViewCell" id="gTV-IL-0wX" customClass="FoodClassCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAK-oz-BuY">
+                        <rect key="frame" x="1" y="1" width="98" height="98"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="水果类" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwO-J8-jdN">
+                                <rect key="frame" x="0.0" y="73" width="98" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="59N-39-uCR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="IBF-fw-EMp">
+                                <rect key="frame" x="0.0" y="0.0" width="98" height="73"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gwO-J8-jdN" firstAttribute="top" secondItem="IBF-fw-EMp" secondAttribute="bottom" id="0b9-uQ-y6U"/>
+                            <constraint firstAttribute="trailing" secondItem="IBF-fw-EMp" secondAttribute="trailing" id="2py-Eb-sR1"/>
+                            <constraint firstAttribute="trailing" secondItem="gwO-J8-jdN" secondAttribute="trailing" id="7HG-k9-KcS"/>
+                            <constraint firstItem="IBF-fw-EMp" firstAttribute="leading" secondItem="wAK-oz-BuY" secondAttribute="leading" id="YEQ-W6-dkY"/>
+                            <constraint firstItem="IBF-fw-EMp" firstAttribute="top" secondItem="wAK-oz-BuY" secondAttribute="top" id="sgr-Ts-VsS"/>
+                            <constraint firstItem="gwO-J8-jdN" firstAttribute="leading" secondItem="wAK-oz-BuY" secondAttribute="leading" id="vcA-gD-Reg"/>
+                            <constraint firstAttribute="bottom" secondItem="gwO-J8-jdN" secondAttribute="bottom" id="yH7-lf-QK7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wAK-oz-BuY" secondAttribute="bottom" constant="1" id="1Ht-5h-2kS"/>
+                <constraint firstAttribute="trailing" secondItem="wAK-oz-BuY" secondAttribute="trailing" constant="1" id="FDz-Ks-t77"/>
+                <constraint firstItem="wAK-oz-BuY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="Tia-bI-q4d"/>
+                <constraint firstItem="wAK-oz-BuY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1" id="nWb-cy-i07"/>
+            </constraints>
+            <size key="customSize" width="164" height="128"/>
+            <connections>
+                <outlet property="imageViewIV" destination="IBF-fw-EMp" id="vpT-sn-nGg"/>
+                <outlet property="labelLA" destination="gwO-J8-jdN" id="xke-eG-qZy"/>
+            </connections>
+            <point key="canvasLocation" x="445" y="461"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="default" width="174" height="174"/>
+    </resources>
+</document>

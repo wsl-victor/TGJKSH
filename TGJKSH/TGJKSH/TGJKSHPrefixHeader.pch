@@ -1,0 +1,38 @@
+//
+//  TGJKSHPrefixHeader.pch
+//  TGJKSH
+//
+//  Created by victor on 16/9/6.
+//  Copyright © 2016年 wsl. All rights reserved.
+//
+
+#ifndef TGJKSHPrefixHeader_pch
+#define TGJKSHPrefixHeader_pch
+
+
+#import "UIView+PBSExtension.h"
+#import "UIImage+PBSExtension.h"
+#import "UIColor+PBSCommonColor.h"
+#import "UIBarButtonItem+Extension.h"
+#import "NSObject+PBSNextVc.h"
+#import "PBSColor.h"
+
+
+//中文字体
+#define CHINESE_FONT_NAME  @"Heiti SC"
+#define CHINESE_SYSTEM(x) [UIFont fontWithName:CHINESE_FONT_NAME size:x]
+//不同屏幕尺寸字体适配（320，568是因为效果图为IPHONE5 如果不是则根据实际情况修改）
+#define kScreenWidthRatio  (Main_Screen_Width / 320.0)
+#define kScreenHeightRatio (Main_Screen_Height / 568.0)
+#define AdaptedWidth(x)  ceilf((x) * kScreenWidthRatio)
+#define AdaptedHeight(x) ceilf((x) * kScreenHeightRatio)
+#define AdaptedFontSize(R)     CHINESE_SYSTEM(AdaptedWidth(R))
+
+// MainScreen Height&Width
+#define Main_Screen_Height      [[UIScreen mainScreen] bounds].size.height
+#define Main_Screen_Width       [[UIScreen mainScreen] bounds].size.width
+
+
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+#endif /* TGJKSHPrefixHeader_pch */

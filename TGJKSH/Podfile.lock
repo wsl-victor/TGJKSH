@@ -1,0 +1,56 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - HMSegmentedControl (1.5.2)
+  - Masonry (1.0.1)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - Reachability (3.2)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - SVProgressHUD (2.0.3)
+  - TMCache (2.1.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - HMSegmentedControl (~> 1.5.2)
+  - Masonry (~> 1.0.1)
+  - MJExtension (~> 3.0.12)
+  - MJRefresh (~> 3.1.10)
+  - Reachability (~> 3.2)
+  - SDCycleScrollView (~> 1.65)
+  - SDWebImage (~> 3.7)
+  - SVProgressHUD (~> 2.0.3)
+  - TMCache (~> 2.1.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  HMSegmentedControl: 83b9686022d2176fb6457d2bdb61e5d6393fed7d
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  TMCache: 95ebcc9b3c7e90fb5fd8fc3036cba3aa781c9bed
+
+PODFILE CHECKSUM: f4c1b6c80a20fe73312fb9da6ea7b68abfc1524c
+
+COCOAPODS: 1.0.1
